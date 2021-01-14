@@ -1,0 +1,6 @@
+/* 公共样式文件 */
+page {
+    background-color: #EBEDF0;
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+}

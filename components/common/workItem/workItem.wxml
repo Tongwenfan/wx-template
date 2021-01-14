@@ -1,0 +1,22 @@
+<view class="index-work-item-container" style="background-color: {{bgc}}"  bindtap="getNewUrl">
+				<view class="work-item-number-main">
+								<text class="work-item-number">{{item.sheetNo}}</text>
+								<text class="work-item-type">{{item.typeTxt}}</text>
+				</view>
+				<view class="work-item-status-main">
+								<text class="{{item.workStatusClass}} work-item-status">{{item.stateTxt}}</text>
+								<text class="work-item-time">{{item.lastTime}}</text>
+				</view>
+				<view class="work-item-message-main ">
+								<view class="work-item-message-item  item-bottom ">
+												<text class="work-item-message-title">地址：</text>
+												<text>{{item.createTime}}</text>
+								</view>
+				</view>
+				<view class="work-item-message-main item-noBorder  item-bottom">
+								<view class="work-item-message-item">
+												<text class="work-item-message-title">提单时间：</text>
+												<text>{{item.createTime}}</text>
+								</view>
+				</view>
+</view>

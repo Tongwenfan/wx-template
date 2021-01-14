@@ -1,0 +1,82 @@
+page{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.logo-img{
+    width: 216rpx;
+    margin-top: 230rpx;
+    margin-bottom: 80rpx;
+}
+.login-input-main{
+    width: 600rpx;
+    height: 94rpx;
+    line-height: 94rpx;
+    background-color: rgba(126,212,255,0.2);
+    border-radius: 10rpx;
+    border: 1rpx solid rgba(126,233,255,0.3);
+    color: #D4E6F4;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 34rpx;
+}
+.login-input-title{
+    font-size: 32rpx;
+    min-width: 100rpx;
+}
+.login-input_input{
+    font-size: 32rpx;
+    height: 94rpx;
+    flex: 1;
+}
+.icon-ic_delephoto_w,
+.icon-ic_hidecode_n,
+.icon-ic_showcode_n{
+    font-size: 48rpx;
+    padding: 0 20rpx;
+}
+.login-input_input-pwd{
+    height: 94rpx;
+    flex: 1;
+}
+.remember-pwd{
+    display: flex;
+    width: 600rpx;
+    color: #FCFFFE;
+    align-items: center;
+}
+.icon-Rectangle,
+.icon-fuxuanxuanzhong{
+    font-size: 32rpx;
+    margin-right: 16rpx;
+}
+.login-btn{
+    margin-top: 56rpx;
+    width: 600rpx;
+    height: 94rpx;
+    background-color: white;
+    font-size: 32rpx;
+    color: #2284DD;
+    line-height: 94rpx;
+}
+
+.forget-btn{
+    background-color: transparent;
+    color: white;
+    font-size: 28rpx;
+}
+.forget-btn::after{
+    border: none;
+}

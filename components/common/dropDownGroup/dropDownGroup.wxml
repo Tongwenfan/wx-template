@@ -1,0 +1,39 @@
+<!-- 头部选择框 -->
+<view class="drop-down-group-container">
+
+
+	<view wx:for="{{groupList}}" bindtap="handleHeaderItemClick" data-index="{{index}}" wx:key="index" class="drop-down-header-item">
+		<view wx:if="{{item.type == 'radio'}}">
+			<text>{{item.chooseIndex || item.children[0] != '全部' ? item.children[item.chooseIndex] : item.title}}</text>
+			<text class="iconfont icon-ic_arrowline_down_s"></text>
+		</view>
+		<view wx:else>
+			<text>{{item.value || item.title}}</text>
+			<text class="iconfont icon-ic_arrowline_down_s"></text>
+		</view>
+	</view>
+</view>
+
+<!-- 选择可弹出的头部选项后弹出 -->
+<view class="drop-pop-container" wx:if="{{popObj}}">
+	<view wx:if="{{popObj.type == 'radio'}}"  wx:for="{{popObj.children}}" data-index="{{index}}" bindtap="choosePopItem" wx:key="index" class="{{index == popObj.chooseIndex ? 'drop-pop-choose-item drop-pop-item' : 'drop-pop-item'}}">
+		<text class="drop-pop-item-title">{{item}}</text>
+		<text wx:if="{{index == popObj.chooseIndex}}" class="iconfont icon-ic_finish_s"></text>
+	</view>
+
+	<van-calendar
+  	show="{{ show }}"
+	type="range"
+	position="top"
+	round="false"
+	color="#3091F2"
+	show-title="false"
+	default-date="{{defaultDate}}"
+	min-date="{{ minDate }}"
+  max-date="{{ maxDate }}"
+	bind:close="onClose"
+	bind:confirm="onConfirm"
+/>
+
+	<view class="drop-pop-mask" ></view>
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/login/login"
+  
+  ],
+  "networkTimeout": {
+    "request": 10000
+    },
+  "window": {
+    "navigationBarBackgroundColor": "#004C97",
+    "navigationBarTitleText": "雪花模版平台",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EBEDF0",
+    "backgroundTextStyle": "light",
+    "onReachBottomDistance": 1,
+    "enablePullDownRefresh": false,
+    "pageOrientation": "auto"
+  },
+ 
+  "sitemapLocation": "sitemap.json"
+  
+}

@@ -1,0 +1,5 @@
+/* 公共css样式 */
+@import "./static/common.wxss"; 
+
+/* iconfont */
+@import "./static/iconfont.wxss";

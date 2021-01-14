@@ -1,0 +1,78 @@
+@import './../../../static//iconfont.wxss';
+
+.drop-down-group-container{
+    background-color: #004C97;
+    display: flex;
+}
+.drop-down-header-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98rpx;
+    font-size: 30rpx;
+    color: #B2C8DF;
+}
+
+.drop-pop-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 98rpx;
+    z-index: 22;
+}
+.drop-pop-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+.drop-pop-container .drop-pop-item:not(:last-child) {
+    position: relative;
+}
+.drop-pop-container .drop-pop-item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    transform: scaleY(0.5,0.5,0.5);
+    width: 100%;
+    bottom: 0;
+    border-bottom: 1rpx solid #e0e0e0;
+    height: 1rpx;
+}
+
+.drop-pop-item{
+    background-color: white;
+    display: flex;
+    height: 120rpx;
+    align-items: center;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    z-index: 2;
+    /* animation: popItemAnimation 500ms ease; */
+}
+.drop-pop-choose-item{
+    color: #2284DD;
+}
+.drop-pop-item-title{
+    flex: 1;
+    font-size: 32rpx;
+}
+
+
+    .van-popup--top {
+   top: 0;
+    left: 0;
+    width: 100%;
+    
+    }
+    

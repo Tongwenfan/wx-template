@@ -1,0 +1,24 @@
+<image class="login-bg" mode='scaleToFill' src="./../../images/pic_login_bg.png"></image>
+
+<image class="logo-img" mode="widthFix" src="../../images/logo.png"></image>
+
+<view class="login-input-main">
+    <text class="login-input-title">帐号</text>
+    <input class="login-input_input" bindinput="handleInputAccount" value="{{username}}"></input>
+    <text class="iconfont icon-ic_delephoto_w" wx:if="{{username}}" bindtap="handleClearUsername"></text>
+</view>
+
+
+<view class="login-input-main">
+    <text class="login-input-title">密码</text>
+    <input class="{{showPwd ? 'login-input_input' : 'login-input_input-pwd'}}" value="{{password}}" bindinput="handleInputPossword" password="{{showPwd}}"></input>
+    <text bindtap="handleChangeSeePwdStatus" class="iconfont {{showPwd ? 'icon-ic_showcode_n' : 'icon-ic_hidecode_n'}}"></text>
+</view>
+
+<view class="remember-pwd">
+    <text bindtap="changeRememberStatus" class="iconfont {{rememberPwd ? 'icon-fuxuanxuanzhong' : 'icon-Rectangle'}}"></text>
+    <text bindtap="changeRememberStatus" style="flex: 1;">记住密码</text>
+    <!-- <button bindtap="forgetPwd" class="forget-btn">忘记密码？</button> -->
+</view>
+
+<button class="login-btn" bindtap="handleLogin">登录</button>
